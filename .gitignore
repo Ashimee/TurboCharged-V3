@@ -1,0 +1,12 @@
+# VSCode
+.vscode
+
+# NPM logs
+false
+
+# Node modules
+node_modules
+
+# Build files
+dist
+webpack

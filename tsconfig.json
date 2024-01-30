@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        // If you use require() or "module": "CommonJS", remove these lines.
+        // If you use "module": "ES6", synthetic default imports are required.
+        "module": "ESNext",
+        "allowSyntheticDefaultImports": true,
+
+        // Recommended strictness settings. Change as you please.
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+
+        // Tell TypeScript where to find the types for Scratch libraries.
+        "paths": {
+            "scratch-vm": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-render": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-svg-renderer": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-render-fonts": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-storage": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-audio": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-parser": ["./node_modules/@turbowarp/types/index.d.ts"],
+            "scratch-blocks": ["./node_modules/@turbowarp/types/index.d.ts"]
+        },
+
+        // Build files
+        "lib": ["ESNext", "DOM"],
+        "target": "ESNext",
+        "moduleResolution": "Node",
+        "outDir": "dist",
+        "allowJs": true,
+        "checkJs": true,
+        "declaration": true,
+        "sourceMap": true,
+    },
+    "include": [ 
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+}
